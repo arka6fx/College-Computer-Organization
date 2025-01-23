@@ -5,7 +5,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
   <lib desc="#Gates" name="1"/>
   <lib desc="#Plexers" name="2"/>
   <lib desc="#Arithmetic" name="3"/>
-  <lib desc="#Memory" name="4"/>
+  <lib desc="#Memory" name="4">
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
   <lib desc="#I/O" name="5"/>
   <lib desc="#Base" name="6">
     <tool name="Text Tool">
@@ -63,30 +69,16 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <circ-port height="8" pin="90,120" width="8" x="46" y="146"/>
       <circ-port height="10" pin="820,80" width="10" x="175" y="75"/>
       <circ-port height="10" pin="840,240" width="10" x="175" y="135"/>
-      <circ-port height="8" pin="200,520" width="8" x="46" y="156"/>
-      <circ-port height="8" pin="200,610" width="8" x="46" y="166"/>
-      <circ-port height="8" pin="200,730" width="8" x="46" y="176"/>
-      <circ-port height="10" pin="1120,770" width="10" x="175" y="145"/>
-      <circ-port height="10" pin="890,520" width="10" x="175" y="155"/>
       <circ-anchor facing="east" height="6" width="6" x="137" y="67"/>
     </appear>
-    <wire from="(680,520)" to="(680,530)"/>
-    <wire from="(880,610)" to="(880,750)"/>
     <wire from="(180,200)" to="(430,200)"/>
     <wire from="(90,80)" to="(150,80)"/>
-    <wire from="(440,610)" to="(490,610)"/>
     <wire from="(500,260)" to="(550,260)"/>
     <wire from="(500,220)" to="(550,220)"/>
     <wire from="(150,80)" to="(150,280)"/>
     <wire from="(280,160)" to="(330,160)"/>
     <wire from="(150,80)" to="(200,80)"/>
-    <wire from="(310,520)" to="(310,530)"/>
-    <wire from="(310,610)" to="(310,620)"/>
-    <wire from="(200,520)" to="(310,520)"/>
-    <wire from="(200,610)" to="(310,610)"/>
-    <wire from="(1060,770)" to="(1120,770)"/>
     <wire from="(110,100)" to="(110,120)"/>
-    <wire from="(440,520)" to="(680,520)"/>
     <wire from="(180,100)" to="(410,100)"/>
     <wire from="(600,240)" to="(840,240)"/>
     <wire from="(120,40)" to="(120,320)"/>
@@ -101,21 +93,36 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(500,180)" to="(500,220)"/>
     <wire from="(500,260)" to="(500,300)"/>
     <wire from="(260,60)" to="(280,60)"/>
-    <wire from="(490,790)" to="(1010,790)"/>
     <wire from="(120,40)" to="(200,40)"/>
-    <wire from="(600,610)" to="(600,730)"/>
     <wire from="(120,320)" to="(200,320)"/>
-    <wire from="(200,730)" to="(600,730)"/>
-    <wire from="(490,610)" to="(490,790)"/>
-    <wire from="(880,750)" to="(1010,750)"/>
-    <wire from="(810,610)" to="(880,610)"/>
-    <wire from="(600,610)" to="(680,610)"/>
     <wire from="(280,60)" to="(410,60)"/>
     <wire from="(110,100)" to="(180,100)"/>
-    <wire from="(810,520)" to="(890,520)"/>
     <wire from="(230,320)" to="(360,320)"/>
     <wire from="(360,160)" to="(430,160)"/>
-    <comp lib="0" loc="(890,520)" name="Pin">
+    <comp lib="6" loc="(420,384)" name="Text">
+      <a name="text" val="Full Subtractor"/>
+      <a name="font" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="1" loc="(260,60)" name="XOR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(360,160)" name="NOT Gate"/>
+    <comp lib="0" loc="(90,120)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(90,40)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="6" loc="(557,171)" name="Text">
+      <a name="text" val="(A XOR B)' AND Bin"/>
+      <a name="font" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(424,286)" name="Text">
+      <a name="text" val="A'B"/>
+      <a name="font" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="1" loc="(230,320)" name="NOT Gate"/>
+    <comp lib="0" loc="(840,240)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="labelloc" val="east"/>
@@ -124,111 +131,52 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="text" val="D"/>
       <a name="font" val="SansSerif bold 16"/>
     </comp>
-    <comp lib="0" loc="(1120,770)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="1" loc="(260,60)" name="XOR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="1" loc="(230,320)" name="NOT Gate"/>
-    <comp lib="8" loc="(770,540)" name="main"/>
-    <comp lib="6" loc="(156,736)" name="Text">
-      <a name="text" val="Bin"/>
-      <a name="font" val="SansSerif bold 16"/>
-    </comp>
-    <comp lib="1" loc="(470,80)" name="XOR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="6" loc="(420,384)" name="Text">
-      <a name="text" val="Full Subtractor"/>
-      <a name="font" val="SansSerif bold 16"/>
-    </comp>
-    <comp lib="8" loc="(400,540)" name="main"/>
-    <comp lib="0" loc="(840,240)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="6" loc="(887,239)" name="Text">
-      <a name="text" val="Bout"/>
-      <a name="font" val="SansSerif bold 16"/>
-    </comp>
-    <comp lib="1" loc="(600,240)" name="OR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="1" loc="(1060,770)" name="OR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(90,40)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="6" loc="(150,621)" name="Text">
-      <a name="text" val="B"/>
-      <a name="font" val="SansSerif bold 16"/>
-    </comp>
-    <comp lib="1" loc="(480,180)" name="AND Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(200,610)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(200,520)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="6" loc="(40,121)" name="Text">
-      <a name="text" val="Bin"/>
-      <a name="font" val="SansSerif bold 16"/>
-    </comp>
     <comp lib="0" loc="(820,80)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="1" loc="(360,160)" name="NOT Gate"/>
-    <comp lib="6" loc="(41,83)" name="Text">
-      <a name="text" val="B"/>
-      <a name="font" val="SansSerif bold 16"/>
+    <comp lib="1" loc="(470,80)" name="XOR Gate">
+      <a name="inputs" val="2"/>
     </comp>
-    <comp lib="0" loc="(200,730)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="6" loc="(635,69)" name="Text">
-      <a name="text" val="A XOR B XOR Bin"/>
-      <a name="font" val="SansSerif bold 16"/>
+    <comp lib="1" loc="(410,300)" name="AND Gate">
+      <a name="inputs" val="2"/>
     </comp>
     <comp lib="0" loc="(90,80)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="0" loc="(90,120)" name="Pin">
-      <a name="tristate" val="false"/>
+    <comp lib="6" loc="(720,229)" name="Text">
+      <a name="text" val="A'B OR ((A XOR B)' AND Bin)"/>
+      <a name="font" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="1" loc="(600,240)" name="OR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(887,239)" name="Text">
+      <a name="text" val="Bout"/>
+      <a name="font" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(40,121)" name="Text">
+      <a name="text" val="Bin"/>
+      <a name="font" val="SansSerif bold 16"/>
     </comp>
     <comp lib="6" loc="(46,40)" name="Text">
       <a name="text" val="A"/>
       <a name="font" val="SansSerif bold 16"/>
     </comp>
-    <comp lib="1" loc="(410,300)" name="AND Gate">
+    <comp lib="1" loc="(480,180)" name="AND Gate">
       <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="6" loc="(149,530)" name="Text">
-      <a name="text" val="A"/>
-      <a name="font" val="SansSerif bold 16"/>
     </comp>
     <comp lib="6" loc="(296,46)" name="Text">
       <a name="text" val="A XOR B"/>
       <a name="font" val="SansSerif bold 16"/>
     </comp>
-    <comp lib="6" loc="(424,286)" name="Text">
-      <a name="text" val="A'B"/>
+    <comp lib="6" loc="(635,69)" name="Text">
+      <a name="text" val="A XOR B XOR Bin"/>
       <a name="font" val="SansSerif bold 16"/>
     </comp>
-    <comp lib="6" loc="(557,171)" name="Text">
-      <a name="text" val="(A XOR B)' AND Bin"/>
-      <a name="font" val="SansSerif bold 16"/>
-    </comp>
-    <comp lib="6" loc="(720,229)" name="Text">
-      <a name="text" val="A'B OR ((A XOR B)' AND Bin)"/>
+    <comp lib="6" loc="(41,83)" name="Text">
+      <a name="text" val="B"/>
       <a name="font" val="SansSerif bold 16"/>
     </comp>
   </circuit>
