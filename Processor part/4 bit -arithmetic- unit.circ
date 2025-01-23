@@ -86,13 +86,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(190,310)" to="(190,320)"/>
     <wire from="(190,390)" to="(190,400)"/>
     <wire from="(280,160)" to="(280,180)"/>
+    <wire from="(60,270)" to="(60,350)"/>
+    <wire from="(60,350)" to="(60,430)"/>
     <wire from="(220,130)" to="(260,130)"/>
     <wire from="(140,120)" to="(170,120)"/>
     <wire from="(230,150)" to="(260,150)"/>
     <wire from="(170,120)" to="(260,120)"/>
     <wire from="(60,180)" to="(280,180)"/>
-    <wire from="(60,340)" to="(280,340)"/>
-    <wire from="(60,260)" to="(280,260)"/>
     <wire from="(170,220)" to="(190,220)"/>
     <wire from="(170,300)" to="(190,300)"/>
     <wire from="(170,380)" to="(190,380)"/>
@@ -106,13 +106,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(170,120)" to="(170,130)"/>
     <wire from="(440,110)" to="(490,110)"/>
     <wire from="(190,140)" to="(190,150)"/>
-    <wire from="(280,250)" to="(280,260)"/>
-    <wire from="(280,330)" to="(280,340)"/>
     <wire from="(280,410)" to="(280,430)"/>
-    <wire from="(60,180)" to="(60,260)"/>
-    <wire from="(60,260)" to="(60,340)"/>
+    <wire from="(280,250)" to="(280,270)"/>
+    <wire from="(280,330)" to="(280,350)"/>
     <wire from="(550,60)" to="(550,90)"/>
-    <wire from="(60,340)" to="(60,430)"/>
+    <wire from="(60,180)" to="(60,270)"/>
     <wire from="(220,220)" to="(260,220)"/>
     <wire from="(220,300)" to="(260,300)"/>
     <wire from="(220,380)" to="(260,380)"/>
@@ -126,6 +124,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(170,290)" to="(260,290)"/>
     <wire from="(170,370)" to="(260,370)"/>
     <wire from="(60,430)" to="(280,430)"/>
+    <wire from="(60,270)" to="(280,270)"/>
+    <wire from="(60,350)" to="(280,350)"/>
     <wire from="(170,130)" to="(190,130)"/>
     <wire from="(180,150)" to="(190,150)"/>
     <wire from="(190,230)" to="(260,230)"/>
