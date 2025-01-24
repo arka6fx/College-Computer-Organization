@@ -103,9 +103,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(300,230)" to="(490,230)"/>
     <wire from="(300,310)" to="(490,310)"/>
     <wire from="(300,390)" to="(490,390)"/>
+    <wire from="(190,140)" to="(190,150)"/>
     <wire from="(170,120)" to="(170,130)"/>
     <wire from="(440,110)" to="(490,110)"/>
-    <wire from="(190,140)" to="(190,150)"/>
     <wire from="(280,410)" to="(280,430)"/>
     <wire from="(280,250)" to="(280,270)"/>
     <wire from="(280,330)" to="(280,350)"/>
@@ -118,8 +118,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(140,290)" to="(170,290)"/>
     <wire from="(140,370)" to="(170,370)"/>
     <wire from="(230,320)" to="(260,320)"/>
-    <wire from="(230,400)" to="(260,400)"/>
     <wire from="(230,240)" to="(260,240)"/>
+    <wire from="(230,400)" to="(260,400)"/>
     <wire from="(170,210)" to="(260,210)"/>
     <wire from="(170,290)" to="(260,290)"/>
     <wire from="(170,370)" to="(260,370)"/>
@@ -131,128 +131,70 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(190,230)" to="(260,230)"/>
     <wire from="(190,310)" to="(260,310)"/>
     <wire from="(190,390)" to="(260,390)"/>
-    <comp lib="2" loc="(300,390)" name="Multiplexer">
+    <comp lib="0" loc="(180,240)" name="Constant"/>
+    <comp lib="0" loc="(230,320)" name="Constant">
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="2" loc="(300,140)" name="Multiplexer">
       <a name="select" val="2"/>
       <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(230,240)" name="Pin">
-      <a name="tristate" val="false"/>
     </comp>
     <comp lib="6" loc="(384,512)" name="Text">
       <a name="text" val="4 Bit Arithmetic Unit"/>
       <a name="font" val="SansSerif bold 22"/>
     </comp>
-    <comp lib="6" loc="(108,126)" name="Text">
-      <a name="text" val="B0"/>
-      <a name="font" val="SansSerif bold 16"/>
-    </comp>
     <comp lib="0" loc="(140,210)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(180,400)" name="Constant"/>
-    <comp lib="0" loc="(660,250)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(440,280)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="6" loc="(402,364)" name="Text">
-      <a name="text" val="A3"/>
-      <a name="font" val="SansSerif bold 16"/>
-    </comp>
-    <comp lib="0" loc="(660,210)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="6" loc="(107,219)" name="Text">
-      <a name="text" val="B1"/>
-      <a name="font" val="SansSerif bold 16"/>
-    </comp>
-    <comp lib="0" loc="(140,370)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
     <comp lib="6" loc="(105,378)" name="Text">
       <a name="text" val="B3"/>
       <a name="font" val="SansSerif bold 16"/>
     </comp>
-    <comp lib="0" loc="(230,320)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(180,320)" name="Constant"/>
-    <comp lib="2" loc="(300,310)" name="Multiplexer">
-      <a name="select" val="2"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(180,150)" name="Constant"/>
-    <comp lib="6" loc="(370,226)" name="Text">
-      <a name="text" val="Y1"/>
-      <a name="font" val="SansSerif bold 16"/>
-    </comp>
-    <comp lib="0" loc="(180,240)" name="Constant"/>
-    <comp lib="0" loc="(230,400)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="6" loc="(405,288)" name="Text">
-      <a name="text" val="A2"/>
-      <a name="font" val="SansSerif bold 16"/>
-    </comp>
-    <comp lib="6" loc="(551,32)" name="Text">
-      <a name="text" val="Cin"/>
-      <a name="font" val="SansSerif bold 16"/>
-    </comp>
-    <comp lib="2" loc="(300,140)" name="Multiplexer">
-      <a name="select" val="2"/>
-      <a name="enable" val="false"/>
-    </comp>
     <comp lib="1" loc="(220,300)" name="NOT Gate"/>
-    <comp lib="6" loc="(80,83)" name="Text">
-      <a name="text" val="S0"/>
+    <comp lib="6" loc="(402,364)" name="Text">
+      <a name="text" val="A3"/>
       <a name="font" val="SansSerif bold 16"/>
     </comp>
-    <comp lib="6" loc="(368,303)" name="Text">
-      <a name="text" val="Y2"/>
+    <comp lib="6" loc="(695,216)" name="Text">
+      <a name="text" val="R1"/>
       <a name="font" val="SansSerif bold 16"/>
     </comp>
-    <comp lib="6" loc="(368,384)" name="Text">
-      <a name="text" val="Y3"/>
+    <comp lib="6" loc="(49,84)" name="Text">
+      <a name="text" val="S1"/>
       <a name="font" val="SansSerif bold 16"/>
     </comp>
-    <comp lib="0" loc="(660,290)" name="Pin">
+    <comp lib="0" loc="(140,290)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="7" loc="(550,110)" name="main"/>
+    <comp lib="0" loc="(660,330)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="2" loc="(300,230)" name="Multiplexer">
-      <a name="select" val="2"/>
-      <a name="enable" val="false"/>
     </comp>
     <comp lib="0" loc="(60,110)" name="Pin">
       <a name="facing" val="south"/>
       <a name="width" val="2"/>
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="0" loc="(440,360)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(550,60)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="6" loc="(695,251)" name="Text">
-      <a name="text" val="R2"/>
+    <comp lib="6" loc="(370,226)" name="Text">
+      <a name="text" val="Y1"/>
       <a name="font" val="SansSerif bold 16"/>
     </comp>
-    <comp lib="6" loc="(694,174)" name="Text">
-      <a name="text" val="R0"/>
+    <comp lib="1" loc="(220,220)" name="NOT Gate"/>
+    <comp lib="6" loc="(368,303)" name="Text">
+      <a name="text" val="Y2"/>
       <a name="font" val="SansSerif bold 16"/>
     </comp>
-    <comp lib="0" loc="(140,290)" name="Pin">
-      <a name="tristate" val="false"/>
+    <comp lib="6" loc="(551,32)" name="Text">
+      <a name="text" val="Cin"/>
+      <a name="font" val="SansSerif bold 16"/>
     </comp>
-    <comp lib="0" loc="(660,170)" name="Pin">
+    <comp lib="6" loc="(403,207)" name="Text">
+      <a name="text" val="A1"/>
+      <a name="font" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(660,210)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="labelloc" val="east"/>
@@ -261,54 +203,112 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="text" val="Y0"/>
       <a name="font" val="SansSerif bold 16"/>
     </comp>
-    <comp lib="6" loc="(49,84)" name="Text">
-      <a name="text" val="S1"/>
+    <comp lib="6" loc="(405,288)" name="Text">
+      <a name="text" val="A2"/>
       <a name="font" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="2" loc="(300,230)" name="Multiplexer">
+      <a name="select" val="2"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(440,360)" name="Pin">
+      <a name="tristate" val="false"/>
     </comp>
     <comp lib="6" loc="(703,337)" name="Text">
       <a name="text" val="Cout"/>
       <a name="font" val="SansSerif bold 16"/>
     </comp>
-    <comp lib="0" loc="(230,150)" name="Pin">
-      <a name="tristate" val="false"/>
+    <comp lib="0" loc="(180,400)" name="Constant"/>
+    <comp lib="6" loc="(696,293)" name="Text">
+      <a name="text" val="R3"/>
+      <a name="font" val="SansSerif bold 16"/>
     </comp>
-    <comp lib="1" loc="(220,380)" name="NOT Gate"/>
-    <comp lib="6" loc="(695,216)" name="Text">
-      <a name="text" val="R1"/>
+    <comp lib="6" loc="(106,295)" name="Text">
+      <a name="text" val="B2"/>
+      <a name="font" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(660,290)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="6" loc="(695,251)" name="Text">
+      <a name="text" val="R2"/>
+      <a name="font" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(180,150)" name="Constant"/>
+    <comp lib="6" loc="(80,83)" name="Text">
+      <a name="text" val="S0"/>
       <a name="font" val="SansSerif bold 16"/>
     </comp>
     <comp lib="0" loc="(440,200)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="7" loc="(550,110)" name="main"/>
-    <comp lib="6" loc="(696,293)" name="Text">
-      <a name="text" val="R3"/>
-      <a name="font" val="SansSerif bold 16"/>
+    <comp lib="0" loc="(440,280)" name="Pin">
+      <a name="tristate" val="false"/>
     </comp>
-    <comp lib="1" loc="(220,130)" name="NOT Gate"/>
-    <comp lib="6" loc="(106,295)" name="Text">
-      <a name="text" val="B2"/>
-      <a name="font" val="SansSerif bold 16"/>
+    <comp lib="0" loc="(230,150)" name="Constant">
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(180,320)" name="Constant"/>
+    <comp lib="0" loc="(660,170)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(440,110)" name="Pin">
+      <a name="tristate" val="false"/>
     </comp>
     <comp lib="6" loc="(402,117)" name="Text">
       <a name="text" val="A0"/>
       <a name="font" val="SansSerif bold 16"/>
     </comp>
-    <comp lib="1" loc="(220,220)" name="NOT Gate"/>
-    <comp lib="6" loc="(403,207)" name="Text">
-      <a name="text" val="A1"/>
+    <comp lib="0" loc="(660,250)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="2" loc="(300,390)" name="Multiplexer">
+      <a name="select" val="2"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="1" loc="(220,380)" name="NOT Gate"/>
+    <comp lib="0" loc="(140,370)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(230,240)" name="Constant">
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(550,60)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="6" loc="(107,219)" name="Text">
+      <a name="text" val="B1"/>
       <a name="font" val="SansSerif bold 16"/>
     </comp>
     <comp lib="0" loc="(140,120)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="0" loc="(440,110)" name="Pin">
-      <a name="tristate" val="false"/>
+    <comp lib="0" loc="(230,400)" name="Constant">
+      <a name="value" val="0x0"/>
     </comp>
-    <comp lib="0" loc="(660,330)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="labelloc" val="east"/>
+    <comp lib="6" loc="(368,384)" name="Text">
+      <a name="text" val="Y3"/>
+      <a name="font" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(694,174)" name="Text">
+      <a name="text" val="R0"/>
+      <a name="font" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="1" loc="(220,130)" name="NOT Gate"/>
+    <comp lib="6" loc="(108,126)" name="Text">
+      <a name="text" val="B0"/>
+      <a name="font" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="2" loc="(300,310)" name="Multiplexer">
+      <a name="select" val="2"/>
+      <a name="enable" val="false"/>
     </comp>
   </circuit>
 </project>
